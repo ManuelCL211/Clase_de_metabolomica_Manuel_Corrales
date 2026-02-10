@@ -1,0 +1,58 @@
+#Manuel Bernabé Corrales López
+#00478359
+# Ciencias ómicas: metabolómica. Portaforlio 1: Dataframe en R
+
+# Vector A: Película
+pelicula <- c(
+  "Anora",
+  "The Brutalist",
+  "Flow",
+  "Emilia Pérez",
+  "Wicked",
+  "Dune: Part Two",
+  "I’m Still Here"
+)
+
+# Vector B: Premios Oscar 2025
+premios_oscar_2025 <- c(
+  "Mejor Película, Mejor Director, Mejor Actriz, Mejor Guion Original, Mejor Montaje",
+  "Mejor Actor, Mejor Fotografía, Mejor Banda Sonora",
+  "Mejor Película de Animación",
+  "Mejor Actriz de Reparto, Mejor Canción Original",
+  "Mejor Diseño de Vestuario, Diseño de Producción",
+  "Mejor Sonido, Mejores Efectos Visuales",
+  "Mejor Película Internacional"
+)
+
+# Vector C: Mes de estreno
+mes_estreno <- c(
+  "Enero",
+  "Diciembre",
+  "Diciembre",
+  "Mayo",
+  "Noviembre",
+  "Marzo",
+  "Febrero"
+)
+
+# Vector D: Recaudación mundial (estimada)
+recaudacion_mundial_estimada <- c(
+  41000000,
+  41400000,
+  728000000,
+  714000000,
+  20000000,
+  29900000,
+  30000000
+)
+
+#Tabla
+tabla_oscar_2025 <- data.frame(
+  Película = pelicula,
+  `Premios Oscar 2025` = premios_oscar_2025,
+  `Mes de estreno` = mes_estreno,
+  `Recaudación mundial (estimada)` = recaudacion_mundial_estimada
+)
+
+View(tabla_oscar_2025)
+
